@@ -1,0 +1,21 @@
+# Secrets never enter the image; the platform supplies them as environment variables.
+.env
+.env.*
+!.env.example
+
+.git/
+.github/
+.venv/
+venv/
+**/node_modules/
+**/.next/
+**/__pycache__/
+**/*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Local demo state, including whatever a local run remembered.
+examples/*/data/.memory-*.json
+**/.storefront_memory.json
+**/.merchant_memory.json
